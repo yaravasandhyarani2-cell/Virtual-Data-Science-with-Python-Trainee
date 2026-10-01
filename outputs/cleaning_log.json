@@ -1,0 +1,277 @@
+{
+    "dataset_name": "Ames Housing (house_prices)",
+    "source": "OpenML fetch_openml(name='house_prices')",
+    "random_state": 42,
+    "rows_before": 1460,
+    "rows_after": 1460,
+    "columns_before": 81,
+    "columns_after": 233,
+    "missing_values_before": {
+        "total_missing_cells": 6965,
+        "columns_with_missing": {
+            "PoolQC": 1453,
+            "MiscFeature": 1406,
+            "Alley": 1369,
+            "Fence": 1179,
+            "FireplaceQu": 690,
+            "LotFrontage": 259,
+            "GarageType": 81,
+            "GarageYrBlt": 81,
+            "GarageFinish": 81,
+            "GarageQual": 81,
+            "GarageCond": 81,
+            "BsmtExposure": 38,
+            "BsmtFinType2": 38,
+            "BsmtFinType1": 37,
+            "BsmtCond": 37,
+            "BsmtQual": 37,
+            "MasVnrArea": 8,
+            "MasVnrType": 8,
+            "Electrical": 1
+        }
+    },
+    "missing_values_after": {
+        "total_missing_cells": 0,
+        "columns_with_missing": {}
+    },
+    "dropped_columns_over_80pct_missing": [
+        "Alley",
+        "PoolQC",
+        "Fence",
+        "MiscFeature"
+    ],
+    "outliers_detected": {
+        "GrLivArea": {
+            "q1": 1129.5,
+            "q3": 1776.75,
+            "iqr": 647.25,
+            "iqr_lower": 158.625,
+            "iqr_upper": 2747.625,
+            "iqr_count": 31,
+            "zscore_count": 16,
+            "mean": 1515.463698630137,
+            "std": 525.4803834232025
+        },
+        "LotArea": {
+            "q1": 7553.5,
+            "q3": 11601.5,
+            "iqr": 4048.0,
+            "iqr_lower": 1481.5,
+            "iqr_upper": 17673.5,
+            "iqr_count": 69,
+            "zscore_count": 13,
+            "mean": 10516.828082191782,
+            "std": 9981.26493237915
+        },
+        "SalePrice": {
+            "q1": 129975.0,
+            "q3": 214000.0,
+            "iqr": 84025.0,
+            "iqr_lower": 3937.5,
+            "iqr_upper": 340037.5,
+            "iqr_count": 61,
+            "zscore_count": 22,
+            "mean": 180921.19589041095,
+            "std": 79442.50288288662
+        },
+        "TotalBsmtSF": {
+            "q1": 795.75,
+            "q3": 1298.25,
+            "iqr": 502.5,
+            "iqr_lower": 42.0,
+            "iqr_upper": 2052.0,
+            "iqr_count": 61,
+            "zscore_count": 10,
+            "mean": 1057.4294520547944,
+            "std": 438.7053244594708
+        }
+    },
+    "outliers_treated": {
+        "GrLivArea": {
+            "method": "winsorization_1_99_percentile",
+            "lower_threshold": 692.18,
+            "upper_threshold": 3123.4800000000023,
+            "capped_lower_count": 15,
+            "capped_upper_count": 15,
+            "total_capped": 30
+        },
+        "LotArea": {
+            "method": "winsorization_1_99_percentile",
+            "lower_threshold": 1680.0,
+            "upper_threshold": 37567.64000000021,
+            "capped_lower_count": 7,
+            "capped_upper_count": 15,
+            "total_capped": 22
+        },
+        "TotalBsmtSF": {
+            "method": "winsorization_1_99_percentile",
+            "lower_threshold": 0.0,
+            "upper_threshold": 2155.05,
+            "capped_lower_count": 0,
+            "capped_upper_count": 15,
+            "total_capped": 15
+        },
+        "SalePrice": {
+            "method": "winsorization_1_99_percentile",
+            "lower_threshold": 61815.97,
+            "upper_threshold": 442567.01000000053,
+            "capped_lower_count": 15,
+            "capped_upper_count": 15,
+            "total_capped": 30
+        }
+    },
+    "duplicates_removed": 0,
+    "logical_errors_fixed": {
+        "duplicates_removed": 0,
+        "year_remod_built_fixed": 0,
+        "year_built_sold_fixed": 0,
+        "negative_areas_fixed": 0,
+        "whitespace_entries_trimmed": 0,
+        "mssubclass_converted_to_categorical": true
+    },
+    "columns_encoded": {
+        "ordinal_columns": [
+            "ExterQual",
+            "ExterCond",
+            "BsmtQual",
+            "BsmtCond",
+            "HeatingQC",
+            "KitchenQual",
+            "FireplaceQu",
+            "GarageQual",
+            "GarageCond"
+        ],
+        "nominal_columns_one_hot": [
+            "MSSubClass",
+            "MSZoning",
+            "Street",
+            "LotShape",
+            "LandContour",
+            "Utilities",
+            "LotConfig",
+            "LandSlope",
+            "Neighborhood",
+            "Condition1",
+            "Condition2",
+            "BldgType",
+            "HouseStyle",
+            "RoofStyle",
+            "RoofMatl",
+            "Exterior1st",
+            "Exterior2nd",
+            "MasVnrType",
+            "Foundation",
+            "BsmtExposure",
+            "BsmtFinType1",
+            "BsmtFinType2",
+            "Heating",
+            "CentralAir",
+            "Electrical",
+            "Functional",
+            "GarageType",
+            "GarageFinish",
+            "PavedDrive",
+            "SaleType",
+            "SaleCondition"
+        ]
+    },
+    "feature_count_before_encoding": 75,
+    "feature_count_after_encoding": 231,
+    "skewness_before": {
+        "LotFrontage": 2.212958984987426,
+        "LotArea": 2.4516708328966845,
+        "OverallQual": 0.2169439277628693,
+        "OverallCond": 0.6930674724842182,
+        "YearBuilt": -0.613461172488183,
+        "YearRemodAdd": -0.5035620027004709,
+        "MasVnrArea": 2.6776164510820997,
+        "BsmtFinSF1": 1.685503071910789,
+        "BsmtFinSF2": 4.255261108933303,
+        "BsmtUnfSF": 0.9202684528039037,
+        "TotalBsmtSF": 0.24329363298471945,
+        "1stFlrSF": 1.3767566220336365,
+        "2ndFlrSF": 0.8130298163023265,
+        "LowQualFinSF": 9.011341288465387,
+        "GrLivArea": 0.7991498540430804,
+        "BsmtFullBath": 0.596066609663168,
+        "BsmtHalfBath": 4.103402697955168,
+        "FullBath": 0.036561558402727165,
+        "HalfBath": 0.675897448233722,
+        "BedroomAbvGr": 0.21179009627507137,
+        "KitchenAbvGr": 4.488396777072859,
+        "TotRmsAbvGrd": 0.6763408364355531,
+        "Fireplaces": 0.6495651830548841,
+        "GarageYrBlt": -0.6783329490955604,
+        "GarageCars": -0.3425489297486655,
+        "GarageArea": 0.17998090674623907,
+        "WoodDeckSF": 1.5413757571931312,
+        "OpenPorchSF": 2.3643417403694404,
+        "EnclosedPorch": 3.08987190371177,
+        "3SsnPorch": 10.304342032693112,
+        "ScreenPorch": 4.122213743143115,
+        "PoolArea": 14.828373640750588,
+        "MiscVal": 24.476794188821916,
+        "MoSold": 0.21205298505146022,
+        "YrSold": 0.09626851386568028,
+        "SalePrice": 1.2727409680004593
+    },
+    "skewness_after": {
+        "SalePrice_raw": 1.2727409680004593,
+        "SalePrice_log1p": 0.161039540710451,
+        "GrLivArea": 0.7991498540430804,
+        "LotArea": 2.4516708328966845,
+        "TotalBsmtSF": 0.24329363298471945
+    },
+    "key_features_stats_evolution": {
+        "GrLivArea": {
+            "raw_mean": 1515.463698630137,
+            "raw_std": 525.4803834232025,
+            "treated_winsorized_mean": 1510.2896575342465,
+            "treated_winsorized_std": 495.14892661119086,
+            "scaled_mean": 1.0889310762076877e-16,
+            "scaled_std": 1.0003426417780865
+        },
+        "LotArea": {
+            "raw_mean": 10516.828082191782,
+            "raw_std": 9981.26493237915,
+            "treated_winsorized_mean": 10063.006575342468,
+            "treated_winsorized_std": 5062.299090209861,
+            "scaled_mean": 1.2166827667125003e-17,
+            "scaled_std": 1.0003426417780865
+        },
+        "TotalBsmtSF": {
+            "raw_mean": 1057.4294520547944,
+            "raw_std": 438.7053244594708,
+            "treated_winsorized_mean": 1050.6107876712329,
+            "treated_winsorized_std": 404.38788126133426,
+            "scaled_mean": 4.380057960165001e-17,
+            "scaled_std": 1.0003426417780867
+        }
+    },
+    "impact_analysis": {
+        "evaluation_metric": "5-Fold Cross-Validation (Mean)",
+        "target": "SalePrice (USD)",
+        "baseline": {
+            "features_used": "Raw numeric columns only, median imputation, no outlier handling, no scaling",
+            "ridge": {
+                "r2": 0.7438,
+                "rmse": 37793.98
+            },
+            "random_forest": {
+                "r2": 0.8362,
+                "rmse": 30636.32
+            }
+        },
+        "preprocessed": {
+            "features_used": "Full cleaned, winsorized, ordinal + one-hot encoded, StandardScaler",
+            "ridge": {
+                "r2": 0.8438,
+                "rmse": 28074.77
+            },
+            "random_forest": {
+                "r2": 0.8772,
+                "rmse": 25293.06
+            }
+        }
+    }
+}
