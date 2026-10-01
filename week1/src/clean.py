@@ -44,8 +44,14 @@ logger = logging.getLogger(__name__)
 
 RANDOM_STATE = 42
 
+# Ensure working directory is Week1 root (parent directory of src)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+WEEK1_ROOT = os.path.dirname(SCRIPT_DIR)
+if os.path.exists(os.path.join(WEEK1_ROOT, "src")):
+    os.chdir(WEEK1_ROOT)
+
 def ensure_directories():
-    """Ensure required project directories exist."""
+    """Ensure required project directories exist within Week1."""
     dirs = [
         os.path.join("data", "raw"),
         os.path.join("data", "processed"),
