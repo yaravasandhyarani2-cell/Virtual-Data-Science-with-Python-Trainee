@@ -55,6 +55,18 @@ YuvaIntern_Data_Science/
 │   │   └── supervised_model.py
 │   ├── requirements.txt
 │   └── README.md
+├── Week3/                            # Week 3: Unsupervised Learning and Clustering Analysis
+│   ├── data/
+│   │   ├── raw/raw.csv
+│   │   └── processed/ (scaled.csv, k_selection_metrics.csv, cluster_profiles.csv, clustered_customers.csv)
+│   ├── notebooks/
+│   ├── src/
+│   │   └── clustering.py
+│   ├── figures/ (elbow/silhouette curves, silhouette diagrams, cluster scatter, PCA plot)
+│   ├── outputs/
+│   │   └── clustering_summary.json
+│   ├── requirements.txt
+│   └── README.md
 └── ...
 ```
 
@@ -66,5 +78,6 @@ YuvaIntern_Data_Science/
 ## Completed Modules
 - [Week 1: Data Acquisition, Cleaning, and Preprocessing](./Week1/README.md)
 - [Week 2: Exploratory Data Analysis (EDA) and Visualization](./Week2/README.md)
+- [Week 3: Unsupervised Learning and Clustering Analysis](./Week3/README.md)
 - [Week 3: Unsupervised Learning and Clustering Analysis](./Week3/README.md)
 - [Week 4: Supervised Learning and Classification Analysis](./Week4/README.md)
