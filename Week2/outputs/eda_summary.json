@@ -1,66 +1,64 @@
 {
   "dataset": "Bike Sharing Demand (UCI / OpenML)",
   "rows": 17379,
-  "columns": 13,
+  "columns": 22,
   "missing_values": {
     "season": 0,
     "year": 0,
-    "month": 0,
-    "hour": 0,
+    "mnth": 0,
+    "hr": 0,
     "holiday": 0,
     "weekday": 0,
     "workingday": 0,
-    "weather": 0,
+    "weathersit": 0,
     "temp": 0,
-    "feel_temp": 0,
-    "humidity": 0,
+    "atemp": 0,
+    "hum": 0,
     "windspeed": 0,
-    "count": 0
+    "cnt": 0,
+    "season_int": 0,
+    "weather_label": 0,
+    "weathersit_int": 0,
+    "weekday_int": 0,
+    "weekday_label": 0,
+    "yr_int": 0,
+    "day_type": 0,
+    "time_of_day": 0,
+    "temp_bin": 0
   },
   "duplicates": 2,
   "outliers": {
     "cnt": {
-      "iqr_outliers": 505,
-      "zscore_outliers": 244,
-      "min": 1.0,
-      "max": 977.0
+      "IQR_outliers": 505,
+      "Zscore_outliers": 244,
+      "IQR_lower_bound": -321.5,
+      "IQR_upper_bound": 642.5,
+      "Min": 1.0,
+      "Max": 977.0
     },
     "hum": {
-      "iqr_outliers": 22,
-      "zscore_outliers": 22,
-      "min": 0.0,
-      "max": 1.0
+      "IQR_outliers": 22,
+      "Zscore_outliers": 22,
+      "IQR_lower_bound": 0.03,
+      "IQR_upper_bound": 1.23,
+      "Min": 0.0,
+      "Max": 1.0
     },
     "windspeed": {
-      "iqr_outliers": 342,
-      "zscore_outliers": 107,
-      "min": 0.0,
-      "max": 56.9969
-    },
-    "zero_humidity_rows": 22
-  },
-  "multivariate": {
-    "peak_hour_workday": 17,
-    "avg_cnt_2011": 143.79,
-    "avg_cnt_2012": 234.67,
-    "yoy_growth_pct": 63.2,
-    "top_positive_corr": {
-      "temp": 0.4047722757786585,
-      "atemp": 0.40092930412663175,
-      "hr": 0.39407149778294204
-    },
-    "top_negative_corr": {
-      "weathersit": -0.14242613813809568,
-      "weathersit_int": -0.14242613813809568,
-      "hum": -0.32291074082456017
+      "IQR_outliers": 342,
+      "Zscore_outliers": 107,
+      "IQR_lower_bound": -7.993,
+      "IQR_upper_bound": 31.992,
+      "Min": 0.0,
+      "Max": 56.997
     }
   },
   "key_insights": {
     "peak_hour": 17,
     "peak_hour_avg_count": 461.5,
     "busiest_season": "Fall",
-    "busiest_season_avg": 236.0,
     "slowest_season": "Spring",
+    "busiest_season_avg": 236.0,
     "busiest_month": 9,
     "busiest_month_avg": 240.8,
     "avg_count_by_weather": {

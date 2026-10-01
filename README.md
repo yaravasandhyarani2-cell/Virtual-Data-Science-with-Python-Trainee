@@ -21,7 +21,21 @@ YuvaIntern_Data_Science/
 │   ├── requirements.txt
 │   ├── README.md
 │   └── .gitignore
-├── Week2/                            # Week 2: (Upcoming module)
+├── Week2/                            # Week 2: Exploratory Data Analysis and Visualization
+│   ├── data/
+│   │   ├── raw/raw.csv
+│   │   └── processed/eda_ready.csv
+│   ├── notebooks/
+│   │   └── week2_eda.ipynb
+│   ├── src/
+│   │   └── eda.py
+│   ├── outputs/
+│   │   ├── figures/ (all 16+ plots as PNG)
+│   │   ├── tables/ (all CSV summary tables)
+│   │   ├── eda_summary.json
+│   │   └── key_findings.md
+│   ├── requirements.txt
+│   └── README.md
 └── ...
 ```
 
@@ -32,3 +46,4 @@ YuvaIntern_Data_Science/
 
 ## Completed Modules
 - [Week 1: Data Acquisition, Cleaning, and Preprocessing](./Week1/README.md)
+- [Week 2: Exploratory Data Analysis (EDA) and Visualization](./Week2/README.md)
