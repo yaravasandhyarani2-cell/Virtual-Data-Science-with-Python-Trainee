@@ -1,0 +1,92 @@
+{
+  "dataset": "Mall Customer Segmentation",
+  "rows": 200,
+  "columns": 5,
+  "features_used": [
+    "Annual Income (k$)",
+    "Spending Score (1-100)"
+  ],
+  "scaling": "StandardScaler",
+  "algorithm": "KMeans (k-means++, n_init=10, random_state=42)",
+  "metrics": {
+    "best_k": 5,
+    "silhouette": 0.5547,
+    "davies_bouldin": 0.5722,
+    "calinski_harabasz": 248.65,
+    "inertia": 65.57,
+    "cluster_sizes": {
+      "0": 81,
+      "1": 39,
+      "2": 22,
+      "3": 35,
+      "4": 23
+    }
+  },
+  "profiles": [
+    {
+      "cluster": 0,
+      "size": 81,
+      "pct": 40.5,
+      "income_mean": 55.3,
+      "income_min": 39,
+      "income_max": 76,
+      "score_mean": 49.52,
+      "score_min": 34,
+      "score_max": 61,
+      "silhouette_mean": 0.6,
+      "segment": "Standard / Middle Market (near-median income and spending)"
+    },
+    {
+      "cluster": 1,
+      "size": 39,
+      "pct": 19.5,
+      "income_mean": 86.54,
+      "income_min": 69,
+      "income_max": 137,
+      "score_mean": 82.13,
+      "score_min": 63,
+      "score_max": 97,
+      "silhouette_mean": 0.51,
+      "segment": "Target / Premium (high income, high spending)"
+    },
+    {
+      "cluster": 2,
+      "size": 22,
+      "pct": 11.0,
+      "income_mean": 25.73,
+      "income_min": 15,
+      "income_max": 39,
+      "score_mean": 79.36,
+      "score_min": 61,
+      "score_max": 99,
+      "silhouette_mean": 0.6,
+      "segment": "Impulsive Spenders (low income, high spending)"
+    },
+    {
+      "cluster": 3,
+      "size": 35,
+      "pct": 17.5,
+      "income_mean": 88.2,
+      "income_min": 70,
+      "income_max": 137,
+      "score_mean": 17.11,
+      "score_min": 1,
+      "score_max": 39,
+      "silhouette_mean": 0.51,
+      "segment": "Careful Wealth (high income, low spending)"
+    },
+    {
+      "cluster": 4,
+      "size": 23,
+      "pct": 11.5,
+      "income_mean": 26.3,
+      "income_min": 15,
+      "income_max": 39,
+      "score_mean": 20.91,
+      "score_min": 3,
+      "score_max": 40,
+      "silhouette_mean": 0.51,
+      "segment": "Budget Conscious (low income, low spending)"
+    }
+  ]
+}

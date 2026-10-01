@@ -35,15 +35,36 @@ YuvaIntern_Data_Science/
 │   │   ├── eda_summary.json
 │   │   └── key_findings.md
 │   ├── requirements.txt
+├── Week3/                            # Week 3: Unsupervised Learning & Clustering Analysis
+│   ├── data/
+│   │   ├── raw/raw.csv
+│   │   └── processed/
+│   ├── figures/
+│   ├── outputs/
+│   ├── src/
+│   │   └── clustering.py
+│   ├── requirements.txt
+│   └── README.md
+├── Week4/                            # Week 4: Supervised Learning & Classification Analysis
+│   ├── data/
+│   │   ├── raw/raw.csv
+│   │   └── processed/
+│   ├── figures/
+│   ├── outputs/
+│   ├── src/
+│   │   └── supervised_model.py
+│   ├── requirements.txt
 │   └── README.md
 └── ...
 ```
 
 ## Policy for All Future Weeks
-- Every new weekly task goes into its own dedicated sibling folder (`Week2`, `Week3`, etc.).
+- Every new weekly task goes into its own dedicated sibling folder (`Week2`, `Week3`, `Week4`, etc.).
 - Never mix files across different weeks.
 - All code, notebooks, datasets, dependencies, and outputs remain strictly inside the respective week's folder.
 
 ## Completed Modules
 - [Week 1: Data Acquisition, Cleaning, and Preprocessing](./Week1/README.md)
 - [Week 2: Exploratory Data Analysis (EDA) and Visualization](./Week2/README.md)
+- [Week 3: Unsupervised Learning and Clustering Analysis](./Week3/README.md)
+- [Week 4: Supervised Learning and Classification Analysis](./Week4/README.md)

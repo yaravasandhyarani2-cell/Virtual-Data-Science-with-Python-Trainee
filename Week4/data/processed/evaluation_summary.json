@@ -1,0 +1,148 @@
+{
+  "dataset": "Breast Cancer Wisconsin Diagnostic",
+  "task": "Supervised Binary Classification (Malignant vs Benign)",
+  "rows": 569,
+  "features_count": 30,
+  "train_size": 455,
+  "test_size": 114,
+  "cross_validation": {
+    "folds": 5,
+    "strategy": "StratifiedKFold",
+    "results": {
+      "Logistic Regression": {
+        "accuracy": {
+          "mean": 0.978,
+          "std": 0.0098
+        },
+        "precision": {
+          "mean": 0.9795,
+          "std": 0.0162
+        },
+        "recall": {
+          "mean": 0.986,
+          "std": 0.0131
+        },
+        "f1": {
+          "mean": 0.9825,
+          "std": 0.0078
+        },
+        "roc_auc": {
+          "mean": 0.9957,
+          "std": 0.0048
+        }
+      },
+      "Random Forest Classifier": {
+        "accuracy": {
+          "mean": 0.9626,
+          "std": 0.0179
+        },
+        "precision": {
+          "mean": 0.9722,
+          "std": 0.0172
+        },
+        "recall": {
+          "mean": 0.9684,
+          "std": 0.0258
+        },
+        "f1": {
+          "mean": 0.97,
+          "std": 0.0146
+        },
+        "roc_auc": {
+          "mean": 0.9905,
+          "std": 0.0076
+        }
+      }
+    }
+  },
+  "test_evaluation": {
+    "Logistic Regression": {
+      "accuracy": 0.9825,
+      "precision": 0.9861,
+      "recall": 0.9861,
+      "f1": 0.9861,
+      "roc_auc": 0.9954,
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9761904761904762,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.9761904761904762,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9861111111111112,
+          "recall": 0.9861111111111112,
+          "f1-score": 0.9861111111111112,
+          "support": 72.0
+        },
+        "accuracy": 0.9824561403508771,
+        "macro avg": {
+          "precision": 0.9811507936507937,
+          "recall": 0.9811507936507937,
+          "f1-score": 0.9811507936507937,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9824561403508771,
+          "recall": 0.9824561403508771,
+          "f1-score": 0.9824561403508771,
+          "support": 114.0
+        }
+      }
+    },
+    "Random Forest Classifier": {
+      "accuracy": 0.9474,
+      "precision": 0.9583,
+      "recall": 0.9583,
+      "f1": 0.9583,
+      "roc_auc": 0.9947,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          3,
+          69
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9285714285714286,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9285714285714286,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9583333333333334,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9583333333333334,
+          "support": 72.0
+        },
+        "accuracy": 0.9473684210526315,
+        "macro avg": {
+          "precision": 0.9434523809523809,
+          "recall": 0.9434523809523809,
+          "f1-score": 0.9434523809523809,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "f1-score": 0.9473684210526315,
+          "support": 114.0
+        }
+      }
+    }
+  }
+}

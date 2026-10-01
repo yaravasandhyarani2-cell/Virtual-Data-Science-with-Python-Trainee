@@ -1,0 +1,6 @@
+cluster,size,pct,income_mean,income_min,income_max,score_mean,score_min,score_max,silhouette_mean,segment
+0,81,40.5,55.3,39,76,49.52,34,61,0.6,Standard / Middle Market (near-median income and spending)
+1,39,19.5,86.54,69,137,82.13,63,97,0.51,"Target / Premium (high income, high spending)"
+2,22,11.0,25.73,15,39,79.36,61,99,0.6,"Impulsive Spenders (low income, high spending)"
+3,35,17.5,88.2,70,137,17.11,1,39,0.51,"Careful Wealth (high income, low spending)"
+4,23,11.5,26.3,15,39,20.91,3,40,0.51,"Budget Conscious (low income, low spending)"
