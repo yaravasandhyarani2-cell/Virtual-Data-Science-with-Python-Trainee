@@ -1,0 +1,27 @@
+,season,weather_label,weekday_label,day_type,time_of_day,temp_bin
+Fall,4496.0,,,,,
+Summer,4409.0,,,,,
+Spring,4242.0,,,,,
+Winter,4232.0,,,,,
+Clear,,11413.0,,,,
+Cloudy,,4544.0,,,,
+Light Rain/Snow,,1419.0,,,,
+Heavy Rain/Snow,,3.0,,,,
+Sat,,,2512.0,,,
+Sun,,,2502.0,,,
+Fri,,,2487.0,,,
+Mon,,,2479.0,,,
+Wed,,,2475.0,,,
+Thu,,,2471.0,,,
+Tue,,,2453.0,,,
+Working Day,,,,11865.0,,
+Weekend,,,,5014.0,,
+Holiday,,,,500.0,,
+Evening,,,,,5098.0,
+Morning,,,,,4360.0,
+Night,,,,,4276.0,
+Afternoon,,,,,3645.0,
+Warm,,,,,,6935.0
+Mild,,,,,,6316.0
+Hot,,,,,,2115.0
+Cold,,,,,,2013.0

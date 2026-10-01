@@ -1,0 +1,87 @@
+{
+  "dataset": "Bike Sharing Demand (UCI / OpenML)",
+  "rows": 17379,
+  "columns": 13,
+  "missing_values": {
+    "season": 0,
+    "year": 0,
+    "month": 0,
+    "hour": 0,
+    "holiday": 0,
+    "weekday": 0,
+    "workingday": 0,
+    "weather": 0,
+    "temp": 0,
+    "feel_temp": 0,
+    "humidity": 0,
+    "windspeed": 0,
+    "count": 0
+  },
+  "duplicates": 2,
+  "outliers": {
+    "cnt": {
+      "iqr_outliers": 505,
+      "zscore_outliers": 244,
+      "min": 1.0,
+      "max": 977.0
+    },
+    "hum": {
+      "iqr_outliers": 22,
+      "zscore_outliers": 22,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "windspeed": {
+      "iqr_outliers": 342,
+      "zscore_outliers": 107,
+      "min": 0.0,
+      "max": 56.9969
+    },
+    "zero_humidity_rows": 22
+  },
+  "multivariate": {
+    "peak_hour_workday": 17,
+    "avg_cnt_2011": 143.79,
+    "avg_cnt_2012": 234.67,
+    "yoy_growth_pct": 63.2,
+    "top_positive_corr": {
+      "temp": 0.4047722757786585,
+      "atemp": 0.40092930412663175,
+      "hr": 0.39407149778294204
+    },
+    "top_negative_corr": {
+      "weathersit": -0.14242613813809568,
+      "weathersit_int": -0.14242613813809568,
+      "hum": -0.32291074082456017
+    }
+  },
+  "key_insights": {
+    "peak_hour": 17,
+    "peak_hour_avg_count": 461.5,
+    "busiest_season": "Fall",
+    "busiest_season_avg": 236.0,
+    "slowest_season": "Spring",
+    "busiest_month": 9,
+    "busiest_month_avg": 240.8,
+    "avg_count_by_weather": {
+      "Clear": 204.9,
+      "Cloudy": 175.2,
+      "Heavy Rain/Snow": 74.3,
+      "Light Rain/Snow": 111.6
+    },
+    "top3_peak_hours": {
+      "17": 461.5,
+      "18": 425.5,
+      "8": 359.0
+    },
+    "temp_cnt_correlation": 0.4048,
+    "hum_cnt_correlation": -0.3229,
+    "avg_count_by_day_type": {
+      "Holiday": 156.9,
+      "Weekend": 183.9,
+      "Working Day": 193.2
+    },
+    "yoy_growth_pct": 63.2,
+    "windspeed_outliers_iqr": 342
+  }
+}
