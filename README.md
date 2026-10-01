@@ -72,7 +72,19 @@ YuvaIntern_Data_Science/
 │   │   └── deep_learning_model.py
 │   ├── requirements.txt
 │   └── README.md
-└── ...
+└── Week6/                            # Week 6: Final Capstone - Integrative End-to-End Pipeline
+    ├── data/
+    │   ├── raw/raw.csv
+    │   └── processed/ (train_processed.csv, test_processed.csv, cluster_profiles.csv, model_performance_summary.csv, scaler.joblib)
+    ├── figures/ (correlation heatmap, geospatial clusters, actual vs predicted, feature importances)
+    ├── models/ (random_forest_regressor.joblib, gradient_boosting_regressor.joblib)
+    ├── outputs/
+    │   ├── capstone_summary.json
+    │   └── capstone_findings.md
+    ├── src/
+    │   └── capstone_pipeline.py
+    ├── requirements.txt
+    └── README.md
 ```
 
 ## Policy for All Future Weeks
@@ -86,3 +98,4 @@ YuvaIntern_Data_Science/
 - [Week 3: Unsupervised Learning and Clustering Analysis](./Week3/README.md)
 - [Week 4: Supervised Learning and Classification Analysis](./Week4/README.md)
 - [Week 5: Deep Learning Application (TensorFlow / Keras)](./Week5/README.md)
+- [Week 6: Final Capstone – Integrative End-to-End Data Science Pipeline](./Week6/README.md)
