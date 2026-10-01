@@ -35,12 +35,14 @@ YuvaIntern_Data_Science/
 │   │   ├── eda_summary.json
 │   │   └── key_findings.md
 │   ├── requirements.txt
+│   └── README.md
 ├── Week3/                            # Week 3: Unsupervised Learning & Clustering Analysis
 │   ├── data/
 │   │   ├── raw/raw.csv
-│   │   └── processed/
-│   ├── figures/
+│   │   └── processed/ (scaled.csv, k_selection_metrics.csv, cluster_profiles.csv, clustered_customers.csv)
+│   ├── figures/ (elbow/silhouette curves, silhouette diagrams, cluster scatter, PCA plot)
 │   ├── outputs/
+│   │   └── clustering_summary.json
 │   ├── src/
 │   │   └── clustering.py
 │   ├── requirements.txt
@@ -48,30 +50,33 @@ YuvaIntern_Data_Science/
 ├── Week4/                            # Week 4: Supervised Learning & Classification Analysis
 │   ├── data/
 │   │   ├── raw/raw.csv
-│   │   └── processed/
-│   ├── figures/
+│   │   └── processed/ (train_processed.csv, test_processed.csv, models, metrics)
+│   ├── figures/ (confusion matrices, ROC curves, PR curves, feature importances)
 │   ├── outputs/
+│   │   ├── evaluation_summary.json
+│   │   └── key_findings.md
 │   ├── src/
 │   │   └── supervised_model.py
 │   ├── requirements.txt
 │   └── README.md
-├── Week3/                            # Week 3: Unsupervised Learning and Clustering Analysis
+├── Week5/                            # Week 5: Deep Learning Application (TensorFlow / Keras)
 │   ├── data/
 │   │   ├── raw/raw.csv
-│   │   └── processed/ (scaled.csv, k_selection_metrics.csv, cluster_profiles.csv, clustered_customers.csv)
-│   ├── notebooks/
-│   ├── src/
-│   │   └── clustering.py
-│   ├── figures/ (elbow/silhouette curves, silhouette diagrams, cluster scatter, PCA plot)
+│   │   └── processed/ (train_scaled.csv, val_scaled.csv, test_scaled.csv)
+│   ├── figures/ (training history loss/accuracy curves, confusion matrix, ROC curve)
+│   ├── models/ (deep_classifier_model.keras, best_model_weights.weights.h5)
 │   ├── outputs/
-│   │   └── clustering_summary.json
+│   │   ├── deep_learning_summary.json
+│   │   └── key_findings.md
+│   ├── src/
+│   │   └── deep_learning_model.py
 │   ├── requirements.txt
 │   └── README.md
 └── ...
 ```
 
 ## Policy for All Future Weeks
-- Every new weekly task goes into its own dedicated sibling folder (`Week2`, `Week3`, `Week4`, etc.).
+- Every new weekly task goes into its own dedicated sibling folder (`Week1`, `Week2`, `Week3`, `Week4`, `Week5`, etc.).
 - Never mix files across different weeks.
 - All code, notebooks, datasets, dependencies, and outputs remain strictly inside the respective week's folder.
 
@@ -79,5 +84,5 @@ YuvaIntern_Data_Science/
 - [Week 1: Data Acquisition, Cleaning, and Preprocessing](./Week1/README.md)
 - [Week 2: Exploratory Data Analysis (EDA) and Visualization](./Week2/README.md)
 - [Week 3: Unsupervised Learning and Clustering Analysis](./Week3/README.md)
-- [Week 3: Unsupervised Learning and Clustering Analysis](./Week3/README.md)
 - [Week 4: Supervised Learning and Classification Analysis](./Week4/README.md)
+- [Week 5: Deep Learning Application (TensorFlow / Keras)](./Week5/README.md)

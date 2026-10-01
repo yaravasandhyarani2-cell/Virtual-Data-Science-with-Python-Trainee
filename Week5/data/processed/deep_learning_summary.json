@@ -1,0 +1,32 @@
+{
+  "dataset": "Breast Cancer Wisconsin Diagnostic",
+  "task": "Deep Learning Binary Classification (Malignant vs Benign)",
+  "framework": "TensorFlow 2.21.0 / Keras 3.15.1",
+  "architecture": "Sequential Deep Neural Network (Dense 64 -> BN -> Drop(0.3) -> Dense 32 -> BN -> Drop(0.2) -> Dense 16 -> Drop(0.1) -> Sigmoid)",
+  "optimizer": "Adam (lr=0.001)",
+  "loss": "BinaryCrossentropy",
+  "total_samples": 569,
+  "features_count": 30,
+  "test_metrics": {
+    "accuracy": 0.9651,
+    "precision": 0.9636,
+    "recall": 0.9815,
+    "f1": 0.9725,
+    "roc_auc": 0.9925,
+    "confusion_matrix": [
+      [
+        30,
+        2
+      ],
+      [
+        1,
+        53
+      ]
+    ],
+    "epochs_trained": 54,
+    "final_train_loss": 0.0333,
+    "final_val_loss": 0.0759,
+    "final_train_acc": 0.9925,
+    "final_val_acc": 0.9765
+  }
+}
